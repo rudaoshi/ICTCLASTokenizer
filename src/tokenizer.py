@@ -14,7 +14,7 @@ class ICTCLASTokenizer(TokenizerI):
 		self.ICTCLASCore = ICTCLASSegmenterCore(cur_dir_path)
 		
 	def tokenize(self, text):
-		return self.ICTCLASCore.Segment(text)
+		return self.ICTCLASCore.Segment(text).split()
 		
 		
 		
