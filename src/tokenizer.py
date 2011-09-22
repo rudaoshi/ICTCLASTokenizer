@@ -10,7 +10,7 @@ class ICTCLASTokenizer(TokenizerI):
 	def __init__(self):
 		cur_file_path = __file__;
 		cur_dir_path = os.path.dirname(cur_file_path) + os.path.sep;
-		print cur_dir_path
+
 		self.ICTCLASCore = ICTCLASSegmenterCore(cur_dir_path)
 		
 	def tokenize(self, text):
